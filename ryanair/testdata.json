@@ -1,0 +1,10 @@
+{
+  "TestData": {
+    "place": ["Dublin","Basel"],
+    "deptDate":["Apr", "2022-04-19"],
+    "retDate": ["Apr", "2022-04-26"],
+    "Adult": 2,
+    "Names" : ["Tapan Sahoo", "Evan Sahoo"]
+
+  }
+}
