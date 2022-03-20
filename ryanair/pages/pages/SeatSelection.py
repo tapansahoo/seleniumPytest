@@ -27,22 +27,7 @@ class SeatSelection(PageFactory):
         time.sleep(5)
 
         seatelemnts =[ ele   for ele in  self.driver.find_elements(By.XPATH,"//*[contains(@id, 'seat-2')]") if ele.get_attribute("class")=='ng-star-inserted seatmap__seat seatmap__seat--standard']
-        # self.driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
-        # ele_xpath = '//*[@id="seat-21C"]'
-        # ele_xpath = '// *[ @ id = "seat-01B"]'
-        # ele = self.driver.find_element(By.XPATH,ele_xpath)
-        # coordinates = ele.location_once_scrolled_into_view  # returns dict of X, Y coordinates
-        # self.web_driver.execute_script('window.scrollTo({}, {});'.format(coordinates['x'], coordinates['y']))
-        # ele = WebDriverWait(self.driver, 10).until(
-        #       EC.presence_of_element_located((By.XPATH,ele_xpath)))
-        # ele.click()
-        # driver.find_element("//input[starts-with (@name,'Tut')]")
-        # print (seatelemnts)
-        # Hover = ActionChains(self.driver).move_to_element(each_username_h)
-        # Hover.perform()
-        #
-        # ### Step 1.5: click the item
-        # # each_username_h.click()
+       
         for i in range(0,2):
              # if ele.get_attribute("class")=='ng-star-inserted seatmap__seat seatmap__seat--standard':
             a = seatelemnts[i].get_attribute("id")
